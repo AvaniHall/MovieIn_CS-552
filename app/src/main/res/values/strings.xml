@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">TrainDash</string>
+    <string name="welcome_to_traindash">Welcome to TrainDash</string>
+    <string name="next">Next</string>
+    <string name="Train_cart">Train_cart</string>
+    <string name="please_select_your_seat">Please select your seat #:</string>
+    <string name="please_select_your_cart">Please select your cart:</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="activity_two">activity_two</string>
+    <string name="prev">Prev</string>
+    <string name="Menu">Menu</string>
+    <string name="sprouts_1_00">Sprouts: $1.00</string>
+    <string name="chips_0_95">Chips: $0.95</string>
+    <string name="fries_1_00">Fries: $1.00</string>
+    <string name="sides">sides</string>
+    <string name="steak_9_00">Steak: $9.00</string>
+    <string name="salad_6_00">Salad: $6.00</string>
+    <string name="main_course">Main Course</string>
+    <string name="hamburger_8_00">Hamburger: $8.00</string>
+    <string name="Drinks">Drinks</string>
+    <string name="soda_1_25">Soda: $1.25</string>
+    <string name="coffe_2_00">Coffee: $2.00</string>
+    <string name="water_0_50">Water: $0.50</string>
+    <string name="Sides">sides</string>
+    <string name="thirdactivity">ThirdActivity</string>
+    <string name="Order">Order</string>
+    <string name="enter_your_card_number">Enter your card number</string>
+    <string name="cvv_code">CVV Code</string>
+    <string name="exp_date">Exp. date</string>
+    <string name="confirm_purchase">Confirm purchase</string>
+    <string name="back">Back</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="place_another_order">Place another order</string>
+    <string name="receipt">Receipt</string>
+
+</resources>
