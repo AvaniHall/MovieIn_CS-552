@@ -6,101 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <EditText
-        android:id="@+id/phoneNum"
+        android:id="@+id/signUpEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:hint="@string/enter_your_phone_number"
+        android:layout_marginTop="283dp"
+        android:ems="10"
+        android:hint="@string/enter_email"
         android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name"
-        tools:ignore="TextContrastCheck" />
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="33dp"
-        android:hint="@string/enter_your_name"
-        android:importantForAutofill="no"
-        android:inputType="text"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/phoneNum"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="105dp"
-        android:text="@string/welcome_to_traindash"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginBottom="2dp"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/signUpEmail"
+        app:layout_constraintEnd_toEndOf="@+id/signUpEmail"
+        app:layout_constraintStart_toStartOf="@+id/signUpEmail" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/signInPassword"
+        app:layout_constraintEnd_toEndOf="@+id/signUpEmail"
+        app:layout_constraintStart_toStartOf="@+id/signUpEmail" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/weclome_to_movie_in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/carts"
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="17dp"
-        android:text="@string/please_select_your_cart"
-        app:layout_constraintBottom_toTopOf="@+id/cart_list"
-        app:layout_constraintStart_toStartOf="@+id/cart_list" />
-
-    <TextView
-        android:id="@+id/seats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="22dp"
-        android:text="@string/please_select_your_seat"
-        app:layout_constraintStart_toStartOf="@+id/cart_list"
-        app:layout_constraintTop_toBottomOf="@+id/cart_list" />
-
-    <Spinner
-        android:id="@+id/cart_list"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneNum"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Spinner
-        android:id="@+id/seat_list"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seats"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/sign_in"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2" />
 
     <Button
-        android:id="@+id/first_activity_button"
-        android:layout_width="100dp"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:text="@string/next"
-        android:textColor="@android:color/background_dark"
-        android:textSize="15sp"
-        android:textStyle="bold"
+        android:layout_marginBottom="65dp"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seat_list" />
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <EditText
+        android:id="@+id/signInPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/signUpEmail"
+        app:layout_constraintTop_toBottomOf="@+id/signUpEmail"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
